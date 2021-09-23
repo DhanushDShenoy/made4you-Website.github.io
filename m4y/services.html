@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Made4You</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="admin.html">ADMIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Services</h1>
+    </section>
+
+    <!-- ------------------ Services-------------------- -->
+
+    <section class="servies_page">
+        <h1>Services We Offer</h1>
+        <div class="row">
+            <div class="servies_page-col">
+                <img src="images/web.jpeg" alt="">
+                <div class="layer">
+                    <h3>DEVELOPMENT</h3>
+                    <p> A website should load quickly and should be accessible even on a small view-port and slow
+                        internet connection</p>
+                </div>
+            </div>
+            <div class="servies_page-col">
+                <img src="images/consultancy.jpeg" alt="">
+                <div class="layer">
+                    <h3>CONSULTANCY</h3>
+                    <p>We are here to provide you with expert advice on your design and
+                        development requirements.</p>
+                </div>
+            </div>
+            <div class="servies_page-col">
+                <img src="images/video.jpeg" alt="">
+                <div class="layer">
+                    <h3>VIDEO</h3>
+                    <p>We create a polished professional video that impresses your audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------Footer ------------ -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are committed to going the extra mile to bring success to the clients consistently. <br>
+            We are dedicated to delivering the right people, solutions, and services to the clients that they require to
+            meet their technology challenges and business goals.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+    <!-- --------JavaScript for Toggle Menu----------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
